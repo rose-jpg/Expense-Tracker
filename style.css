@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+}
+h1{
+    margin-bottom: 0.5rem;
+    font-size: 40px;
+    line-height: 3rem;
+}
+input[type=text]{
+    width: 500px;
+    outline: none;
+    padding: 3px;
+  
+}
+.date-Amount{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+input[type=date]{
+    width: 240px;
+    margin-right: 0.5rem;
+    outline: none;
+    padding: 3px;
+    
+}
+input[type=number]{
+    width: 200px;
+    outline: none;
+    padding: 3px;
+}
+input[type=submit]{
+    width: 100px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: green;
+    color: white;
+    border: none;
+    font-weight: 700;border-radius: 3px;
+}
+.expense-title ,.expense{
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    padding: 10px;  
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(94, 90, 90);
+}
+label{
+    font-weight: 700;
+}
+.expense:nth-child(even){
+    background-color: #ccc;
+}
+.expense-title{
+    margin-top: 4rem;
+    font-weight: 900;
+}
+.h2{
+    padding: 5px;
+    font-size: 10px;
+    color: white;
+    background-color: green;
+}
+h4{
+    font-size: 20px;
+    line-height: 2rem;
+    color: green;
+}
+
+
