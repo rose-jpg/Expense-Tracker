@@ -7,6 +7,7 @@ const items = document.querySelector('.items')
 const btn = document.getElementById('cre')
 const totalAmount = document.querySelector('.amount')
 
+
 // Add Event Listners
 getExpense.addEventListener('submit',expense);
 items.addEventListener('click',remove)
@@ -38,6 +39,11 @@ function expense(e){
     deleteBtn.appendChild(document.createTextNode('X'))
     deleteBtn.className = 'h2'
     newItems.appendChild(deleteBtn)
+
+    const display = document.querySelector('.template').remove()
+    
+
+
 }
 // Create Delete Button
 function remove(e){

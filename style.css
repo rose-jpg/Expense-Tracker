@@ -94,5 +94,9 @@ button{
     margin-top: 2rem;
    text-align: center;
 }
-
+.template{
+    background-color: #ccc;
+    width: 800px;
+    padding: 10px;  
+}
 
