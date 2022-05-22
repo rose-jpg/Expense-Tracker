@@ -83,5 +83,16 @@ h4{
     line-height: 2rem;
     color: green;
 }
+button{
+    padding: 0.5rem;
+    background-color: green;
+    border: none;
+    color: white;
+    font-weight: 700;margin-top: 0.5rem;border-radius: 3px;
+}
+.calculate{
+    margin-top: 2rem;
+   text-align: center;
+}
 
 

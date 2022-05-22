@@ -4,10 +4,13 @@ const dateValue = document.querySelector('.datee')
 const amountValue = document.querySelector('.Amountt')
 const nameValue = document.querySelector('.namee')
 const items = document.querySelector('.items')
+const btn = document.getElementById('cre')
+const totalAmount = document.querySelector('.amount')
 
 // Add Event Listners
 getExpense.addEventListener('submit',expense);
 items.addEventListener('click',remove)
+btn.addEventListener('click',add)
 
 //Add Elements
 function expense(e){
@@ -27,8 +30,8 @@ function expense(e){
     expenseDate.innerText= dateValue.value
 
     const expenseAmount = document.createElement('li')
-    newItems.appendChild(expenseAmount)
-    expenseAmount.innerText= amountValue.value
+    newItems.appendChild(expenseAmount) 
+    total.push (parseInt(expenseAmount.innerText= amountValue.value)) 
 
 
     const deleteBtn = document.createElement('p')
@@ -46,3 +49,20 @@ function remove(e){
         }
     }
 }
+const total = []
+
+
+
+function add(){
+    const totalMoney = total.reduce(function(a,b){
+        return a +b
+        
+    },0);
+  
+  totalAmount.innerText =  ` You have Spent a total of  #${totalMoney} Naira`
+
+};
+
+
+
+
