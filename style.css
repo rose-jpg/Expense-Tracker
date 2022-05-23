@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
-}
-body{
     font-family: sans-serif;
 }
 .container{
@@ -12,7 +10,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
     padding: 1rem;
 }
 h1{
@@ -51,6 +48,7 @@ input[type=submit]{
     color: white;
     border: none;
     font-weight: 700;border-radius: 3px;
+    margin-bottom: 3rem;
 }
 .expense-title ,.expense{
     display: flex;
@@ -59,18 +57,14 @@ input[type=submit]{
     padding: 10px;  
     align-items: center;
     font-size: 12px;
-    font-weight: 500;
-    color: rgb(94, 90, 90);
+    font-weight: 700;
+    color: rgb(94, 90, 90);  
 }
 label{
     font-weight: 700;
 }
 .expense:nth-child(even){
     background-color: #ccc;
-}
-.expense-title{
-    margin-top: 4rem;
-    font-weight: 900;
 }
 .h2{
     padding: 5px;
